@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE 110 Lab2</title>
+    <link rel="icon" href="/favicon.png" />
+  </head>
+  <body>
+    <header>
+        <img src="/favicon.png" width=100 height=100 alt="Favicon" />
+        <nav>
+            <ul>
+                <li> <a href="/">Home</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> A SWE Team's First Meeting </h1>
+        <h2> Brainstorming Session and Meeting Minutes </h2>
+        <h3> Date: 04/14/2026</h3>
+
+        <h4> Attendees: Team members of HighFive, Professor Powell, and TA mentors</p>
+        <h4> Meeting Overview and Agenda: </h2>
+        <hr/>
+        <section> 
+            <h2> 1. Meeting Begins: </h2>
+        </section>
+        <ol>
+            <li> Welcome and Introductions, Meet all team members </li>
+            <li> Overview of the project requirements and goals </li>
+            <li> Set ground rules and develop a team contract </li>
+            <li> Coffee and Snack Break</li>
+        </ol>
+        <hr/>
+        <section>
+            <strong>Video Recording of Pouring Some Water</strong>
+            <br/>
+            <video width="640" height="360" controls>
+                <source src="/Lab2 Video.mp4" type="video/mp4">
+            </video>
+        </section>
+        <hr/>
+        <section>
+            <strong> Audio Extraction of the Video</strong>
+            <figure>
+                <figcaption>Audio:</figcaption>
+                <audio controls src="/Lab2 Audio.mp3"></audio>
+                <a href="/Lab2 Audio.mp3"> <br/> Download audio </a>
+            </figure>
+        </section>
+        <hr/>
+        <section> 
+            <h2> 2. After the Break:</h2>
+        </section>
+        <ul>
+            <li> Discuss and brainstorm ideas for approaching the task</li>
+            <li> Discuss potential challenges and how to address them </li>
+            <li> Assign initial tasks and set deadlines for the next meeting </li>
+            <li> Q&A session and open discussion </li>
+        </ul>
+        <hr/>
+        <section> 
+            <h2> 
+                3. End of the meeting. Thank you all for your time. See you next time!
+            </h2> 
+        </section>
+        <section> 
+            <strong>
+                IMPORTANT: For the next meeting, please review your assigned tasks and come prepared to discuss your progress and any concerns you may have.
+            </strong>
+            <br/>
+            <em> 
+                COMMUNICATE: Use the group chat on Slack. Communicate both clearly and often.
+            </em>
+        </section>
+  
+        <div> 
+            <p> 
+                <b>
+                    This text is in a div, no visual difference due to no css. 
+                </b>
+            </p>
+        </div>
+        <p>
+            <span> 
+                <i>
+                    This text is in a span. Nothing too useful without js and css.
+                </i>
+            </span>
+        </p>
+        <details>
+            <summary> Expand to view what was discussed in previous meetings. </summary>
+            <p> 
+                This list of previous meeting discussions is empty for now.
+            </p>
+        </details>
+        <hr/>
+        <form action="/submit" method="post">
+            <fieldset>
+                <label> 
+                    Username:
+                </label>
+                <input type="text" name="usrname"> <br/>
+                <label>
+                    Password:
+                </label>
+                <input type="password" name="password"> <br/>
+                <button type="submit">Submit</button>
+            </fieldset>
+            <fieldset> 
+                <label> Drink Preferences:</label>
+                <select name="Drink">
+                    <option value="Coffee"> Coffee </option>
+                    <option value="Tea"> Tea </option>
+                    <option value="Fruit Juice"> Fruit Juice </option>
+                    <option value="Water"> Water </option>
+                </select> <br/>
+            </fieldset>
+            <fieldset>
+                <label>Preferred meeting times:</label>
+                <input list="times" name="meeting_times">
+                <datalist id="times">
+                    <option value="MWF mornings">
+                    <option value="TuTh mornings">
+                    <option value="MWF afternoons">
+                    <option value="TuTh afternoons">
+                    <option value="MWF evenings">
+                    <option value="TuTh evenings">
+                    <option value="Weekends only"> </option>
+                </datalist> <br/>
+                <button type="submit">Submit</button>
+            </fieldset>
+            <fieldset>
+                <strong> Additional Notes: </strong> <br/>
+                <textarea name="message" rows = "5" cols="25"></textarea> <br/>
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 HighFive Team.</p>
+    </footer>
+  </body>
+</html>
