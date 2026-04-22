@@ -14,10 +14,9 @@ List of Participants Here
 * (Date, Time): Task to do on Agenda
 
 ## Individual Plans/Progress/Assignments
-|          |           |                    |
 | Member # |  Progress | Task for next time |
 | -------- | --------- | ------------------ |
-| Member 1 |  e.g. Familiarized themself with their group members | Familiarize self with the tech stack to be used  |
+| Member 1 |  e.g. Familiarized themself with their group members | Fill in with assigned task for next time. (e.g. Familiarize self with the tech stack to be used)  |
 | Member 2 | fill with member's progress so far | fill with task assignment or goal for next time |
 | Member 3 (team lead) | fill with current progress | fill in with Task for next time (e.g. As team lead discuss with the other members to work out a time that works for everyone). |
 
