@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSE 110 Lab2</title>
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            color: hsl(180, 5%, 9%);
+            text-align: center;
+        }
+    </style>
   </head>
   <body>
     <header>
@@ -34,7 +42,9 @@
         </ol>
         <hr/>
         <section>
-            <h2>Video Recording of Pouring Some Water</h2>
+            <div class="videotitle"> 
+                <h2>Video Recording of Pouring Some Water</h2>
+            </div>
             <br/>
             <video width="640" height="360" controls>
                 <source src="Lab2Video.mp4" type="video/mp4">
@@ -42,12 +52,16 @@
         </section>
         <hr/>
         <section>
-            <h2>Audio Extraction of the Video</h2>
-            <figure>
-                <figcaption>Audio:</figcaption>
-                <audio controls src="Lab2Audio.mp3"></audio>
-                <a href="Lab2Audio.mp3"> <br/> Download audio </a>
-            </figure>
+            <div class="videotitle">
+                <h2>Audio Extraction of the Video</h2>
+            </div>
+            <div class="audio"> 
+                <figure>
+                    <figcaption>Audio:</figcaption>
+                    <audio controls src="Lab2Audio.mp3"></audio>
+                    <a href="Lab2Audio.mp3"> <br/> Download audio </a>
+                </figure>
+            </div>
         </section>
         <hr/>
         <section> 
@@ -66,26 +80,36 @@
             </h2> 
         </section>
         <section> 
-            <strong>
-                IMPORTANT: For the next meeting, please review your assigned tasks and come prepared to discuss your progress and any concerns you may have.
-            </strong>
+            <div class="box2">
+                <p>
+                    <strong>
+                        IMPORTANT: For the next meeting, please review your assigned tasks and come prepared to discuss your progress and any concerns you may have.
+                    </strong>
+                </p>
+
+            </div>
+            <div class="box1">
+                <p> 
+                    <em> 
+                        COMMUNICATE: Use the group chat on Slack. Communicate both clearly and often.
+                    </em>
+                </p>
+            </div>
             <br/>
-            <em> 
-                COMMUNICATE: Use the group chat on Slack. Communicate both clearly and often.
-            </em>
+
         </section>
   
-        <div> 
+        <div class="test"> 
             <p> 
                 <b>
-                    This text is in a div, no visual difference due to no css. 
+                    This text is in a div. 
                 </b>
             </p>
         </div>
         <p>
             <span> 
                 <i>
-                    This text is in a span. Nothing too useful without js and css.
+                    This text is in a span.
                 </i>
             </span>
         </p>
@@ -97,17 +121,19 @@
         </details>
         <hr/>
         <form action="/submit" method="post">
-            <fieldset>
-                <label> 
-                    Username:
-                </label>
+            <div class="login">
+                <fieldset>
+                    <label> 
+                        Username:
+                    </label>
                     <input type="text" name="usrname"> <br/>
-                <label>
-                    Password:
-                </label>
-                <input type="password" name="password"> <br/>
-                <button type="submit">Submit</button>
-            </fieldset>
+                    <label>
+                        Password:
+                    </label>
+                    <input type="password" name="password"> <br/>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </div>
             <fieldset> 
                 <label> Drink Preferences:</label>
                 <select name="Drink">
@@ -132,7 +158,7 @@
                 </datalist> <br/>
                 <button type="submit">Submit</button>
             </fieldset>
-            
+
             <fieldset>
                 Known Languages: <br/>
                 <label>
@@ -166,10 +192,10 @@
                 <label for="date">Select a date for your next meeting:</label>
                 <input type="date" id="date" name="date">
             </fieldset>
-
+            
             <fieldset>
                 <strong> Additional Notes: </strong> <br/>
-                <textarea name="message" rows = "5" cols="25"></textarea> <br/>
+                <textarea name="message" rows = "5" cols="50"></textarea> <br/>
             </fieldset>
 
         </form>
