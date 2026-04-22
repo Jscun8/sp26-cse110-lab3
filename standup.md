@@ -30,4 +30,4 @@ List of Participants Here
 - Examples are below:
 - [x] (Brainstorm ideas, assigned to members 1 to 2)
 - [x] Team lead tasks of planning and resolving time-conflict issues, assigned to member 3.
-- [ ] Finalize Group Contract and Ground Rules
+- [ ] Finalize Group Contract and Ground Rules.
