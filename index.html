@@ -24,12 +24,12 @@
         </nav>
     </header>
     <main>
-        <h1> A SWE Team's First Meeting </h1>
+        <h1 id="title">A SWE Team's First Meeting</h1>
         <h2> Brainstorming Session and Meeting Minutes </h2>
-        <h3> Date: 04/14/2026</h3>
+        <h3> <p> Date: 04/14/2026 </p></h3>
         <strong> NOTE: You must communicate if you cannot attend a meeting!</strong>
         <h4> Attendees: Team members of HighFive, Professor Powell, and TA mentors </h4>
-        <h4> Meeting Overview and Agenda: </h4>
+        <h4> <p>Meeting Overview and Agenda: </p></h4>
         <hr/>
         <section> 
             <h2> 1. Meeting Begins: </h2>
@@ -106,6 +106,9 @@
                 </b>
             </p>
         </div>
+        <p class="combo">
+            This text gets specifically selected by a combination of selectors.
+        </p>
         <p>
             <span> 
                 <i>
@@ -115,8 +118,8 @@
         </p>
         <details>
             <summary> Expand to view what was discussed in previous meetings. </summary>
-            <p> 
-                This list of previous meeting discussions is empty for now.
+            <p class="nested"> 
+                This list of previous meeting discussions is empty for now. <a href="#">Open in separate tab</a>.
             </p>
         </details>
         <hr/>
@@ -130,7 +133,7 @@
                     <label>
                         Password:
                     </label>
-                    <input type="password" name="password"> <br/>
+                    <input type="text" name="password"> <br/>
                     <button type="submit">Submit</button>
                 </fieldset>
             </div>
