@@ -1,6 +1,14 @@
-/* CSS variable with fallback */
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
 :root {
   --main-color: rgb(128, 119, 183);
+}
+
+#title {
+    color:rgb(26, 14, 99)
 }
 
 body {
@@ -15,7 +23,7 @@ body {
 }
 
 
-/* Background color mix on the text in the span */
+/* Background color mix on the text in the span and text decoration */
 span {
   background-color: color-mix(in srgb, blue 30%, red 70%);
   text-decoration: underline dotted blue;
@@ -94,6 +102,51 @@ video {
     margin: auto;
 }
 
+video, audio {
+    border-style: solid;
+    border-color: #193c7c;
+    border-width: 80%;
+    border-radius: 5rem;
+}
+
+details p {
+    color:rgb(244, 5, 5);
+}
+
+footer > p {
+    text-align: justify;
+    color: gold;
+}
+
+h4 ~ h4 {
+    color: rgb(5, 28, 95);
+}
+
+h2 + h3 {
+    color: rgb(5, 28, 95);
+}
+
+p.combo {
+    color: gold;
+    text-decoration: underline dashed blue;
+}
+
+section:has(.box1) {
+    text-decoration: underline gold;
+}
+
+.nested {
+    font-family: 'monospace', monospace;
+    font-size: 0.9em;
+    & > a {
+        color: rgb(5, 28, 95);
+        &:hover {
+            color: gold;
+            background-color: rgb(5, 28, 95);
+        }
+    }
+}
+
 strong {
     text-decoration: underline;
     height: 50%;
@@ -113,7 +166,7 @@ details {
   flex-grow: 10;
 }
 
-.login {
+.login{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -125,12 +178,13 @@ button:hover {
 }
 
 button:active {
-  color: green;
+  color: red;
 }
 
 form:active {
     color: gold;
 }
+
 
 button {
     background-color: rgb(59, 39, 194);
@@ -157,8 +211,11 @@ fieldset {
     border-style: solid;
 }
 
+input[type="text"] {
+  border: 2px solid green;
+}
 
-/* Media Query (Responsiveness) */
+/* One Media Query for Responsiveness */
 @media (max-width: 600px){
   form {
     flex-direction: column;
