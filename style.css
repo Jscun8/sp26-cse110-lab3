@@ -12,13 +12,13 @@
 }
 
 body {
-  background-color: var(--main-color, rgb(5, 5, 95)); /* fallback = navy blue */
+  background-color: var(--main-color, rgb(5, 5, 95)); /* fallback color is navy blue */
   font-family: 'Quantico', cursive;
 }
 
 /* Wider gamut on text in div */
 .test {
-  color: rgb(250, 53, 53); /* fallback color*/
+  color: rgb(253, 142, 31); /* fallback color*/
   color: color(display-p3 1 0.5 0.25);
 }
 
@@ -53,19 +53,18 @@ span {
   max-width: 100vw;
   min-width: 90vw;
 
-  color: rgb(250, 53, 53); /* fallback color */
-  color: color(display-p3 0.5 1 0.5);
+  color: rgb(53, 250, 135); 
 }
 
 /* Box model 2*/
 .box2 {
   border-style: solid;
   border-color: #ce3030;
-  border-width: 80%;
+  border-width: 3px;
   border-radius: 10px;
 
   /* font size */
-  font-size: 1.10em;
+  font-size: 1.05em;
   
   /* padding shorthand */
   padding: 0.1in 0.1in 0.1in 0.1in;
@@ -81,8 +80,7 @@ span {
   max-width: 100vw;
   min-width: 95vw;
 
-  color: red; /* fallback color */
-  color: color(display-p3 1 0.5 0.5);
+  color: rgb(238, 76, 76);
 }
 
 video {
@@ -105,7 +103,7 @@ video {
 video, audio {
     border-style: solid;
     border-color: #193c7c;
-    border-width: 80%;
+    border-width: 3px;
     border-radius: 5rem;
 }
 
@@ -192,12 +190,16 @@ button {
     text-align: center;
 }
 
-/* Flexbox and Grid*/
+/* Flexbox */
+.flexbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    flex-wrap:nowrap;
+    gap: 15px;
+}
+/*Grid*/
 form {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  flex-basis: auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
